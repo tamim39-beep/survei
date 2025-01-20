@@ -1,12 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello</h1>
+    <header>
+        <h1>Survey Form Kodein</h1>
+    </header>
+    <main>
+        <section class="form">
+            <form action="">
+                <section>
+                    <label for="fname">First name</label>
+                    <input placeholder="enter your first name" id="fname" type="text" required>
+                </section>
+                <section>
+                    <label for="lname">Last name</label>
+                    <input placeholder="enter your last name" id="lname" type="text" required>
+                </section>
+                <section>
+                    <label for="phone">Phone number</label>
+                    <input placeholder="enter your phone number" id="phone" type="text" required>
+                </section>
+                <section>
+                    <label for="age">Age (Optional)</label>
+                    <input placeholder="enter your age" id="age" type="number">
+                </section>
+                <section>
+                    <label for="gender">Gender</label>
+                    <section id="gender">
+                        <input name="gender" id="male" type="radio" checked>
+                        <label class="i" for="male">Male</label>
+
+                        <input name="gender" id="female" type="radio">
+                        <label class="i" for="female">Female</label>
+                    </section>
+                <section>
+                    <label for="kenapa">Why do you choose kodein?</label>
+                    <textarea placeholder="why?" name="" id="kenapa"></textarea>
+                </section>
+                <section>
+                    <label for="dari">How do you know about kodein?</label>
+                    <select name="" id="dari">
+                        <option value="0">Select</option>
+                        <option value="1">Parents</option>
+                        <option value="2">Friends</option>
+                        <option value="3">Browser</option>
+                    </select>
+                </section>
+                <section>
+                    <input class="s" type="submit">
+                </section>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
