@@ -1,5 +1,5 @@
 main {
-    background-color: rgba(29, 26, 26, 0.7);
+    background-color: gray;
     width: fit-content;
     height: fit-content;
     margin-left: auto;
@@ -45,7 +45,7 @@ form {
 h1 {
     text-align: center;
     font-family: "Source Code Pro", serif;
-    color: white;
+    color: gray;
     margin-top: 50px;
 }
 
@@ -109,5 +109,9 @@ input[type=number] {
 }
 
 body {
-    background-image: url(/ed8f125e0026eba80d4904c6a38b8a01.jpg);
+    background-image: url(/images.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
 }
